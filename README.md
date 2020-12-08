@@ -4,4 +4,10 @@ This is my first attempt at making a form app with C#. It is completely useless,
 Btw this was inspired by [this](https://www.youtube.com/watch?v=8vAx0kObdps) video. If the video is down ask me for a torrent/download of it or something.
 
 # How do I compile this if I want to use it, even though it is completely useless?
-I suggest you just open the solution file in Visual Studio and it will auto-compile the project for you. 😉
+I suggest you just open the .sln solution file in Visual Studio and it will auto-compile the project for you. 😉
+
+# How to make it auto-compile because I am stoopid :^)?
+Press the green run button at the top 🙂.
+
+# Conclusion...
+Have fun with this useless project! :D
