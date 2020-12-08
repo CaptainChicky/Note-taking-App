@@ -9,5 +9,8 @@ I suggest you just open the .sln solution file in Visual Studio and it will auto
 # How to make it auto-compile because I am stoopid :^)?
 Press the green run button at the top 🙂.
 
+# Why is it not an unlicense this time?
+Because I actually spent time and effort into this one 🤣🤡🤣 so, similar to the powershell repository, please credit me when referencing, sharing, or doing something with this at the right times 😔. Please 😥.
+
 # Conclusion...
-Have fun with this useless project! :D
+Have fun with this useless project! 😃
