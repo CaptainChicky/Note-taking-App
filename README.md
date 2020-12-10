@@ -17,3 +17,5 @@ Because I actually spent time and effort into this one 🤣🤡🤣 so, similar 
 
 # Conclusion...
 Have fun with this useless project! 😃
+
+One more thing: If you click read or delete when there is no saved note, there will be an error, as there is no note to read or delete. Idk how do fix, so please ignore 😔.
