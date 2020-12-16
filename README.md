@@ -13,7 +13,7 @@ Press the green run button at the top 🙂.
 🤡🤡🤡 You know what, saaaaaaaaaaame. 😅 *Anyhow* you can fined a polished executable, with version information and icon injected via Resource Hacker already included in the repository, or you can find the "formal release" in the releases section. 🤣 Thanks for taking a look. Note that it is ***not*** code-signed, meaning that *yes*, your antivirus will make a big fuss out of it. Mark it as safe to prevent issues with your antivirus. That's why it's a better idea to compile it yourself, since that way, your antivirus will recongnise that, *oh, the local computer made it*, and not block it or something.
 
 # Why is it not an unlicense this time?
-Because I actually spent time and effort into this one 🤣🤡🤣 so, similar to the powershell repository, please credit me when referencing, sharing, or doing something with this at the right times 😔. Please 😥.
+Because I actually spent time and effort into this one 🤣🤡🤣 so, similar to a few of my PowerShell repositories, please credit me when referencing, sharing, or doing something with this at the right times 😔. Please 😥.
 
 # Conclusion...
 Have fun with this useless project! 😃
