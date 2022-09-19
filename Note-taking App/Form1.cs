@@ -48,20 +48,32 @@ namespace Note_taking_App
 
         private void bttRead_Click(object sender, EventArgs e)
         {
-            int index = dataGridView1.CurrentCell.RowIndex;
-
-            if (index > -1)
+            try
             {
-                txtTitle.Text = table.Rows[index].ItemArray[0].ToString();
-                txtMessage.Text = table.Rows[index].ItemArray[1].ToString();
+                int index = dataGridView1.CurrentCell.RowIndex;
+
+                if (index > -1)
+                {
+                    txtTitle.Text = table.Rows[index].ItemArray[0].ToString();
+                    txtMessage.Text = table.Rows[index].ItemArray[1].ToString();
+                }
+            }catch(NullReferenceException ev)
+            {
+                Console.WriteLine(ev.ToString());
             }
         }
 
         private void bttDelete_Click(object sender, EventArgs e)
         {
-            int index = dataGridView1.CurrentCell.RowIndex;
-
-            table.Rows[index].Delete();
+            try
+            {
+                int index = dataGridView1.CurrentCell.RowIndex;
+                table.Rows[index].Delete();
+            }
+            catch (NullReferenceException ear)
+            {
+                Console.WriteLine(ear.ToString());
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
