@@ -26,7 +26,7 @@ The folder with the same name as the solution file, in this case, `/Note-taking 
 
 Lastly, littered within `/Note-taking App/` is the rest of the source code. It may seem unorganized in a file explorer, but the solution file details its organization so you have to open the project in VS to be able to properly edit it. Once you open the solution, go to the Solution Explorer tab and you should see something similar to this <br><br>
 ![solution](./solution.png)<br><br>
-The `Properties` dropdown contain all the stuff mentioned in the previous paragraph. The `References` dropdown meanwhile details all the project dependencies, such as default system dependencies and NuGet packages.  
+The `Properties` dropdown contain all the stuff mentioned in the previous paragraph. The `References` dropdown meanwhile details all the project dependencies, such as default system dependencies and NuGet packages. Note that the csproj file is part of the solution file.
 
 Next, we have two configuration files. To wit, `App.config`, specifying runtime settings for the project, and `packages.config`, specifying the NuGet packages used in the project. Again, you don't need to edit these files directly, since VS handles them for you.
 
