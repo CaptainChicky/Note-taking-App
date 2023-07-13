@@ -99,11 +99,6 @@ namespace NoteTakingApp
         }
 
 
-
-
-
-
-
         private void NewBtn_Click(object sender, EventArgs e)
         {
             TitleEntryBox.Clear();
