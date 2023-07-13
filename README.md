@@ -40,7 +40,7 @@ Lastly, we have the `NoteForm.cs` file, which contains the code responsible in m
 Just switch your build configuration to whatever mode you need it to be (Debug or Release), and build the solution. This should generate your executable in the `/bin/<mode>/` folder. Interestingly enough, VS shoves a bunch of debugging stuff into the Release build as well (there is literally no difference between debug and release to VS for this project lmao bruh). The only files needed to run the program is the executable itself, its exe.config file, and the NuGet package dlls, so you technically can delete everything else if you're just distributing the program. If you're trying to debug, keep everything because it will be useful for analysis.
 
 # Name 🤔
-Not so much of a "*Temporary* Note-taking App" now are we? lmao  
-Time to change the repo name and update releases/descripton/readme whatever.
+Not so much of a "*temporary* note-taking app" now are we? lmao  
+Time to change the repo name and update releases/descripton/readme whatever :)
 
 Have fun with this useless project. 😃
