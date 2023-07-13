@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Note_taking_App.Properties
+namespace NoteTakingApp.Properties
 {
 
 

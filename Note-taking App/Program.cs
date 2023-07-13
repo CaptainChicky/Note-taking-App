@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Note_taking_App
+namespace NoteTakingApp
 {
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        ///  STA Threading needed for the message pump to ensure form works correctly
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new NoteForm());
         }
     }
 }
