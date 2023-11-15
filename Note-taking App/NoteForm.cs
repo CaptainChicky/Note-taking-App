@@ -40,6 +40,19 @@ namespace NoteTakingApp
 
             // Load the data from the JSON file
             LoadDataFromJsonFile();
+
+            //Check if there are any notes and enable/disable read/delete button
+            if (table.Rows.Count == 0)
+            {
+                ReadBtn.Enabled = false;
+                DeleteBtn.Enabled = false;
+
+            }
+            else
+            {
+                ReadBtn.Enabled = true;
+                DeleteBtn.Enabled = true;
+            }
         }
 
 
@@ -111,6 +124,20 @@ namespace NoteTakingApp
 
             TitleEntryBox.Clear();
             MessageEntryBox.Clear();
+
+            // Enable read button if its disabled
+
+            if (ReadBtn.Enabled == false)
+            {
+                ReadBtn.Enabled = true;
+            }
+
+            // Enable Delete button if its disabled
+            if (DeleteBtn.Enabled == false)
+            {
+                DeleteBtn.Enabled = true;
+            }
+
         }
 
         private void ReadBtn_Click(object sender, EventArgs e)
@@ -140,9 +167,9 @@ namespace NoteTakingApp
 
             if (table.Rows.Count == 0) 
             {
-                // do nothing
+                // nothing
             } 
-            else 
+            else
             {
                 TitleEntryBox.Clear();
                 MessageEntryBox.Clear();
@@ -157,14 +184,21 @@ namespace NoteTakingApp
                     // Select the next row if available
                     if (selectedRowIndex >= savedNotesTable.Rows.Count)
                     {
+
                         // If the last row was deleted, select the new last row
                         savedNotesTable.Rows[savedNotesTable.Rows.Count - 1].Selected = true;
                     }
                     else
                     {
+
                         // Select the row following the deleted one
                         savedNotesTable.Rows[selectedRowIndex].Selected = true;
                     }
+                }else
+                {
+                    // Disable Read /Delete button after deleting last row
+                    ReadBtn.Enabled = false;
+                    DeleteBtn.Enabled = false;
                 }
             }
         }
