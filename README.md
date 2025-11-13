@@ -1,5 +1,5 @@
 # What is this?
-This is my first attempt at making a form app with C#. It is completely useless, as it does not save data once closed (hence *temporary* note-taking app), but could have some use, nevertheless.
+This is my first attempt at making a form app with C#. <s>It is completely useless, as it does not save data once closed (hence *temporary* note-taking app), but could have some use, nevertheless.</s>
 
 Edit 2023: Well... that is... until 2023 :) I've gotten better and understand how C# works now lmao. I've improved the interface display (sorta went the lazy way), and made a data-saving mechanism!
 
