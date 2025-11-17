@@ -1,3 +1,7 @@
+# Note to self
+reqritten history broke this shit bruh https://github.com/JustAlex-project/Note-taking-App/tree/feature-buttons
+add this later 
+
 # What is this?
 This is my first attempt at making a form app with C#. <s>It is completely useless, as it does not save data once closed (hence *temporary* note-taking app), but could have some use, nevertheless.</s>
 
