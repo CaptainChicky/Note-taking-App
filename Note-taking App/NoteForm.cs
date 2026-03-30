@@ -17,8 +17,8 @@ namespace NoteTakingApp
         {
             InitializeComponent();
 
-            // disable scaling
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            // minimum scaling limit (default from designer.cs file)
+            this.MinimumSize = new System.Drawing.Size(903, 569);
 
             // Attach the FormClosing event handler
             this.FormClosing += NoteForm_FormClosing;
@@ -41,18 +41,10 @@ namespace NoteTakingApp
             // Load the data from the JSON file
             LoadDataFromJsonFile();
 
-            //Check if there are any notes and enable/disable read/delete button
-            if (table.Rows.Count == 0)
-            {
-                ReadBtn.Enabled = false;
-                DeleteBtn.Enabled = false;
-
-            }
-            else
-            {
-                ReadBtn.Enabled = true;
-                DeleteBtn.Enabled = true;
-            }
+            // Check if there are any notes and enable/disable read/delete button
+            // Enabled when >0, disabled when <=0 (realistically only =0 happens)
+            ReadBtn.Enabled = table.Rows.Count > 0;
+            DeleteBtn.Enabled = table.Rows.Count > 0;
         }
 
 
@@ -73,7 +65,7 @@ namespace NoteTakingApp
             }
 
 
-            string json = File.ReadAllText("storage.json");
+            string json = File.ReadAllText(filePath);
             noteEntries = JsonConvert.DeserializeObject<List<NoteEntry>>(json);
 
             // Clear the DataTable
@@ -125,26 +117,14 @@ namespace NoteTakingApp
             TitleEntryBox.Clear();
             MessageEntryBox.Clear();
 
-            // Enable read button if its disabled
-            if (ReadBtn.Enabled == false)
-            {
-                ReadBtn.Enabled = true;
-            }
-
-            // Enable Delete button if its disabled
-            if (DeleteBtn.Enabled == false)
-            {
-                DeleteBtn.Enabled = true;
-            }
+            // Enable read and delete buttons
+            ReadBtn.Enabled = true;
+            DeleteBtn.Enabled = true;
         }
 
         private void ReadBtn_Click(object sender, EventArgs e)
         {
-            if (table.Rows.Count == 0) 
-            {
-                // do nothing
-            }
-            else
+            if (table.Rows.Count > 0)
             {
                 // if the row count is not 0, then it is 1+
                 // this means that there will always be a selected row and we read that
@@ -163,11 +143,7 @@ namespace NoteTakingApp
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
 
-            if (table.Rows.Count == 0) 
-            {
-                // do nothing
-            } 
-            else 
+            if (table.Rows.Count > 0)
             {
                 TitleEntryBox.Clear();
                 MessageEntryBox.Clear();

@@ -151,7 +151,7 @@
             this.Controls.Add(this.TitleEntryBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NoteForm";
-            this.Text = "Temporary Note-taking App";
+            this.Text = "Note-taking App";
             this.Load += new System.EventHandler(this.NoteForm_Load);
 
             // Set Anchor and Dock properties for scaling
